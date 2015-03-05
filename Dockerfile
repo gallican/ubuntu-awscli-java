@@ -11,12 +11,12 @@ apt-get install -y curl python-pip && \
 pip --no-input install awscli && \
 apt-get clean && \
 curl -kLH "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" \
-"http://download.oracle.com/otn-pub/java/jdk/8u25-b17/server-jre-8u25-linux-x64.tar.gz" \
--o /tmp/server-jre-8u25-linux-x64.tar.gz && \
+"http://download.oracle.com/otn-pub/java/jdk/8u40-b25/server-jre-8u40-linux-x64.tar.gz" \
+-o /tmp/server-jre-8u40-linux-x64.tar.gz && \
 mkdir -p /usr/lib/jvm && \
-tar -xzf /tmp/server-jre-8u25-linux-x64.tar.gz -C /usr/lib/jvm && \
-rm /tmp/server-jre-8u25-linux-x64.tar.gz && \
-ln -s /usr/lib/jvm/jdk1.8.0_25 /usr/lib/jvm/java-8-oracle
+tar -xzf /tmp/server-jre-8u40-linux-x64.tar.gz -C /usr/lib/jvm && \
+rm /tmp/server-jre-8u40-linux-x64.tar.gz && \
+ln -s /usr/lib/jvm/jdk1.8.0_40 /usr/lib/jvm/java-8-oracle
 
 # Set the locale to UTF-8
 ENV LANGUAGE en_US.UTF-8
